@@ -23,281 +23,14 @@ export const MENU: MenuItem[] = [
                 link: '/dashboards/saas',
                 parentId: 2
             },
-            {
-                id: 5,
-                label: 'MENUITEMS.DASHBOARDS.LIST.CRYPTO',
-                link: '/dashboards/crypto',
-                parentId: 2
-            },
-            {
-                id: 6,
-                label: 'MENUITEMS.DASHBOARDS.LIST.BLOG',
-                link: '/dashboards/blog',
-                parentId: 2
-            },
-            {
-                id: 7,
-                label: 'MENUITEMS.DASHBOARDS.LIST.JOBS',
-                link: '/dashboards/jobs',
-                parentId: 2,
-            },
-        ]
+   
+         ]
     },
     {
         id: 8,
         isLayout: true
     },
-    {
-        id: 9,
-        label: 'MENUITEMS.APPS.TEXT',
-        isTitle: true
-    },
-    {
-        id: 10,
-        label: 'MENUITEMS.CALENDAR.TEXT',
-        icon: 'bx-calendar',
-        link: '/calendar',
-    },
-    {
-        id: 11,
-        label: 'MENUITEMS.CHAT.TEXT',
-        icon: 'bx-chat',
-        link: '/chat',
-        
-    },
-    {
-        id: 12,
-        label: 'MENUITEMS.FILEMANAGER.TEXT',
-        icon: 'bx-file',
-        link: '/filemanager',
-    },
-    {
-        id: 13,
-        label: 'MENUITEMS.ECOMMERCE.TEXT',
-        icon: 'bx-store',
-        subItems: [
-            {
-                id: 14,
-                label: 'MENUITEMS.ECOMMERCE.LIST.PRODUCTS',
-                link: '/ecommerce/products',
-                parentId: 13
-            },
-            {
-                id: 15,
-                label: 'MENUITEMS.ECOMMERCE.LIST.PRODUCTDETAIL',
-                link: '/ecommerce/product-detail/1',
-                parentId: 13
-            },
-            {
-                id: 16,
-                label: 'MENUITEMS.ECOMMERCE.LIST.ORDERS',
-                link: '/ecommerce/orders',
-                parentId: 13
-            },
-            {
-                id: 17,
-                label: 'MENUITEMS.ECOMMERCE.LIST.CUSTOMERS',
-                link: '/ecommerce/customers',
-                parentId: 13
-            },
-            {
-                id: 18,
-                label: 'MENUITEMS.ECOMMERCE.LIST.CART',
-                link: '/ecommerce/cart',
-                parentId: 13
-            },
-            {
-                id: 19,
-                label: 'MENUITEMS.ECOMMERCE.LIST.CHECKOUT',
-                link: '/ecommerce/checkout',
-                parentId: 13
-            },
-            {
-                id: 20,
-                label: 'MENUITEMS.ECOMMERCE.LIST.SHOPS',
-                link: '/ecommerce/shops',
-                parentId: 13
-            },
-            {
-                id: 21,
-                label: 'MENUITEMS.ECOMMERCE.LIST.ADDPRODUCT',
-                link: '/ecommerce/add-product',
-                parentId: 13
-            },
-        ]
-    },
-    {
-        id: 22,
-        label: 'MENUITEMS.CRYPTO.TEXT',
-        icon: 'bx-bitcoin',
-        subItems: [
-            {
-                id: 23,
-                label: 'MENUITEMS.CRYPTO.LIST.WALLET',
-                link: '/crypto/wallet',
-                parentId: 22
-            },
-            {
-                id: 24,
-                label: 'MENUITEMS.CRYPTO.LIST.BUY/SELL',
-                link: '/crypto/buy-sell',
-                parentId: 22
-            },
-            {
-                id: 25,
-                label: 'MENUITEMS.CRYPTO.LIST.EXCHANGE',
-                link: '/crypto/exchange',
-                parentId: 22
-            },
-            {
-                id: 26,
-                label: 'MENUITEMS.CRYPTO.LIST.LENDING',
-                link: '/crypto/lending',
-                parentId: 22
-            },
-            {
-                id: 27,
-                label: 'MENUITEMS.CRYPTO.LIST.ORDERS',
-                link: '/crypto/orders',
-                parentId: 22
-            },
-            {
-                id: 28,
-                label: 'MENUITEMS.CRYPTO.LIST.KYCAPPLICATION',
-                link: '/crypto/kyc-application',
-                parentId: 22
-            },
-            {
-                id: 29,
-                label: 'MENUITEMS.CRYPTO.LIST.ICOLANDING',
-                link: '/crypto-ico-landing',
-                parentId: 22
-            }
-        ]
-    },
-    {
-        id: 30,
-        label: 'MENUITEMS.EMAIL.TEXT',
-        icon: 'bx-envelope',
-        subItems: [
-            {
-                id: 31,
-                label: 'MENUITEMS.EMAIL.LIST.INBOX',
-                link: '/email/inbox',
-                parentId: 30
-            },
-            {
-                id: 32,
-                label: 'MENUITEMS.EMAIL.LIST.READEMAIL',
-                link: '/email/read/1',
-                parentId: 30
-            },
-            {
-                id: 33,
-                label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.TEXT',
-                badge: {
-                    variant: 'success',
-                    text: 'MENUITEMS.EMAIL.LIST.TEMPLATE.BADGE',
-                },
-                parentId: 30,
-                subItems: [
-                    {
-                        id:34,
-                        label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.LIST.BASIC',
-                        link: '/email/basic',
-                        parentId:30 
-                    },
-                    {
-                        id:35,
-                        label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.LIST.ALERT',
-                        link: '/email/alert',
-                        parentId:30
-                    },
-                    {
-                        id:36,
-                        label: 'MENUITEMS.EMAIL.LIST.TEMPLATE.LIST.BILLING',
-                        link: '/email/billing',
-                        parentId:30
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        id: 37,
-        label: 'MENUITEMS.INVOICES.TEXT',
-        icon: 'bx-receipt',
-        subItems: [
-            {
-                id: 38,
-                label: 'MENUITEMS.INVOICES.LIST.INVOICELIST',
-                link: '/invoices/list',
-                parentId: 37
-            },
-            {
-                id: 39,
-                label: 'MENUITEMS.INVOICES.LIST.INVOICEDETAIL',
-                link: '/invoices/detail',
-                parentId: 37
-            },
-        ]
-    },
-    {
-        id: 40,
-        label: 'MENUITEMS.PROJECTS.TEXT',
-        icon: 'bx-briefcase-alt-2',
-        subItems: [
-            {
-                id: 41,
-                label: 'MENUITEMS.PROJECTS.LIST.GRID',
-                link: '/projects/grid',
-                parentId: 40
-            },
-            {
-                id: 42,
-                label: 'MENUITEMS.PROJECTS.LIST.PROJECTLIST',
-                link: '/projects/list',
-                parentId: 40
-            },
-            {
-                id: 43,
-                label: 'MENUITEMS.PROJECTS.LIST.OVERVIEW',
-                link: '/projects/overview',
-                parentId: 40
-            },
-            {
-                id: 44,
-                label: 'MENUITEMS.PROJECTS.LIST.CREATE',
-                link: '/projects/create',
-                parentId: 40
-            }
-        ]
-    },
-    {
-        id: 45,
-        label: 'MENUITEMS.TASKS.TEXT',
-        icon: 'bx-task',
-        subItems: [
-            {
-                id: 46,
-                label: 'MENUITEMS.TASKS.LIST.TASKLIST',
-                link: '/tasks/list',
-                parentId: 45
-            },
-            {
-                id: 47,
-                label: 'MENUITEMS.TASKS.LIST.KANBAN',
-                link: '/tasks/kanban',
-                parentId: 45
-            },
-            {
-                id: 48,
-                label: 'MENUITEMS.TASKS.LIST.CREATETASK',
-                link: '/tasks/create',
-                parentId: 45
-            }
-        ]
-    },
+
     {
         id: 49,
         label: 'MENUITEMS.CONTACTS.TEXT',
@@ -321,31 +54,6 @@ export const MENU: MenuItem[] = [
                 link: '/contacts/profile',
                 parentId: 49
             }
-        ]
-    },
-    {
-        id: 53,
-        label: 'MENUITEMS.BLOG.TEXT',
-        icon: 'bx-file',
-        subItems: [
-            {
-                id: 54,
-                label: 'MENUITEMS.BLOG.LIST.BLOGLIST',
-                link: '/blog/list',
-                parentId: 53
-            },
-            {
-                id: 55,
-                label: 'MENUITEMS.BLOG.LIST.BLOGGRID',
-                link: '/blog/grid',
-                parentId: 53
-            },
-            {
-                id: 56,
-                label: 'MENUITEMS.BLOG.LIST.DETAIL',
-                link: '/blog/detail',
-                parentId: 53
-            },
         ]
     },
     {
@@ -383,29 +91,6 @@ export const MENU: MenuItem[] = [
                 link: '/jobs/categories',
                 parentId: 57
             },
-            {
-                id: 63,
-                label: 'MENUITEMS.JOBS.LIST.CANDIDATE.TEXT',
-                badge: {
-                    variant: 'success',
-                    text: 'MENUITEMS.EMAIL.LIST.TEMPLATE.BADGE',
-                },
-                parentId: 57,
-                subItems: [
-                    {
-                        id:64,
-                        label: 'MENUITEMS.JOBS.LIST.CANDIDATE.LIST.LIST',
-                        link: '/jobs/candidate-list',
-                        parentId:57 
-                    },
-                    {
-                        id:65,
-                        label: 'MENUITEMS.JOBS.LIST.CANDIDATE.LIST.OVERVIEW',
-                        link: '/jobs/candidate-overview',
-                        parentId:57
-                    }
-                ]
-            }
         ]
     },
     {
@@ -521,30 +206,7 @@ export const MENU: MenuItem[] = [
                 link: '/pages/maintenance',
                 parentId: 82
             },
-            {
-                id: 85,
-                label: 'Coming Soon',
-                link: '/pages/coming-soon',
-                parentId: 82
-            },
-            {
-                id: 86,
-                label: 'MENUITEMS.UTILITY.LIST.TIMELINE',
-                link: '/pages/timeline',
-                parentId: 82
-            },
-            {
-                id: 87,
-                label: 'MENUITEMS.UTILITY.LIST.FAQS',
-                link: '/pages/faqs',
-                parentId: 82
-            },
-            {
-                id: 88,
-                label: 'MENUITEMS.UTILITY.LIST.PRICING',
-                link: '/pages/pricing',
-                parentId: 82
-            },
+       
             {
                 id: 89,
                 label: 'MENUITEMS.UTILITY.LIST.ERROR404',
@@ -582,65 +244,12 @@ export const MENU: MenuItem[] = [
                 parentId: 92
             },
             {
-                id: 95,
-                label: 'MENUITEMS.UIELEMENTS.LIST.CARDS',
-                link: '/ui/cards',
-                parentId: 92
-            },
-            {
-                id: 96,
-                label: 'MENUITEMS.UIELEMENTS.LIST.CAROUSEL',
-                link: '/ui/carousel',
-                parentId: 92
-            },
-            {
-                id: 97,
-                label: 'MENUITEMS.UIELEMENTS.LIST.DROPDOWNS',
-                link: '/ui/dropdowns',
-                parentId: 92
-            },
-            {
-                id: 98,
-                label: 'MENUITEMS.UIELEMENTS.LIST.GRID',
-                link: '/ui/grid',
-                parentId: 92
-            },
-            {
-                id: 99,
-                label: 'MENUITEMS.UIELEMENTS.LIST.IMAGES',
-                link: '/ui/images',
-                parentId: 92
-            },
-            {
-                id: 100,
-                label: 'MENUITEMS.UIELEMENTS.LIST.LIGHTBOX',
-                link: '/ui/lightbox',
-                parentId: 92
-            },
-            {
-                id: 101,
-                label: 'MENUITEMS.UIELEMENTS.LIST.MODALS',
-                link: '/ui/modals',
-                parentId: 92
-            },
-            {
                 id: 102,
                 label: 'MENUITEMS.UIELEMENTS.LIST.RANGESLIDER',
                 link: '/ui/rangeslider',
                 parentId: 92
             },
-            {
-                id: 103,
-                label: 'MENUITEMS.UIELEMENTS.LIST.PROGRESSBAR',
-                link: '/ui/progressbar',
-                parentId: 92
-            },
-            {
-                id: 104,
-                label: 'MENUITEMS.UIELEMENTS.LIST.PLACEHOLDER',
-                link: '/ui/placeholder',
-                parentId: 92
-            },
+       
             {
                 id: 105,
                 label: 'MENUITEMS.UIELEMENTS.LIST.SWEETALERT',
@@ -659,18 +268,7 @@ export const MENU: MenuItem[] = [
                 link: '/ui/typography',
                 parentId: 92
             },
-            {
-                id: 108,
-                label: 'MENUITEMS.UIELEMENTS.LIST.TOASTS',
-                link: '/ui/toasts',
-                parentId: 92
-            },
-            {
-                id: 109,
-                label: 'MENUITEMS.UIELEMENTS.LIST.VIDEO',
-                link: '/ui/video',
-                parentId: 92
-            },
+      
             {
                 id: 110,
                 label: 'MENUITEMS.UIELEMENTS.LIST.GENERAL',
@@ -681,12 +279,6 @@ export const MENU: MenuItem[] = [
                 id: 111,
                 label: 'MENUITEMS.UIELEMENTS.LIST.COLORS',
                 link: '/ui/colors',
-                parentId: 92
-            },
-            {
-                id: 112,
-                label: 'MENUITEMS.UIELEMENTS.LIST.RATING',
-                link: '/ui/rating',
                 parentId: 92
             },
             {
@@ -701,12 +293,7 @@ export const MENU: MenuItem[] = [
                 link: '/ui/utilities',
                 parentId: 92
             },
-            {
-                id: 115,
-                label: 'MENUITEMS.UIELEMENTS.LIST.CROPPER',
-                link: '/ui/image-crop',
-                parentId: 92
-            },
+       
         ]
     },
     {
@@ -740,18 +327,6 @@ export const MENU: MenuItem[] = [
                 id: 120,
                 label: 'MENUITEMS.FORMS.LIST.ADVANCED',
                 link: '/form/advanced',
-                parentId: 116
-            },
-            {
-                id: 121,
-                label: 'MENUITEMS.FORMS.LIST.EDITOR',
-                link: '/form/editor',
-                parentId: 116
-            },
-            {
-                id: 122,
-                label: 'MENUITEMS.FORMS.LIST.FILEUPLOAD',
-                link: '/form/uploads',
                 parentId: 116
             },
             {
@@ -855,25 +430,7 @@ export const MENU: MenuItem[] = [
             },
         ]
     },
-    {
-        id: 140,
-        label: 'MENUITEMS.MAPS.TEXT',
-        icon: 'bx-map',
-        subItems: [
-            // {
-            //     id: 141,
-            //     label: 'MENUITEMS.MAPS.LIST.GOOGLEMAP',
-            //     link: '/maps/google',
-            //     parentId: 140
-            // },
-            {
-                id: 142,
-                label: 'MENUITEMS.MAPS.LIST.LEAFLETMAP',
-                link: '/maps/leaflet',
-                parentId: 140
-            }
-        ]
-    },
+
     {
         id: 143,
         label: 'MENUITEMS.MULTILEVEL.TEXT',
