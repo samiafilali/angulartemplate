@@ -70,10 +70,10 @@
       "TEXT": "Menu"
     },
     "DASHBOARDS": {
-      "TEXT": "Dashboards",
+      "TEXT": "Accueil",
       "BADGE": "04",
       "LIST": {
-        "DEFAULT": "Default",
+        "DEFAULT": "Tableau de bord",
         "SAAS": "Saas",
         "CRYPTO": "Crypto",
         "BLOG": "Blog",
@@ -175,10 +175,10 @@
       }
     },
     "CONTACTS": {
-      "TEXT": "Contacts",
+      "TEXT": "Gestion",
       "LIST": {
-        "USERGRID": "User Grid",
-        "USERLIST": "User List",
+        "USERGRID": "Utilisateur",
+        "USERLIST": "Supervision",
         "PROFILE": "Profile"
       }
     },
@@ -192,11 +192,11 @@
       }
     },
     "JOBS": {
-      "TEXT": "Jobs",
+      "TEXT": "Alertes et compte rendu",
       "BADGE": "New",
       "LIST": {
-        "JOBLIST": "Job List",
-        "JOBGRID": "Job Grid",
+        "JOBLIST": "Alertes",
+        "JOBGRID": "Compte rendu",
         "APPLYJOB": "Apply Job",
         "JOBDETAILS": "Job Details",
         "JOBCATEGORIES": "Jobs Categories",

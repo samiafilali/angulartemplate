@@ -94,9 +94,12 @@
         </div>
         <div class="col-xl-8">
             <div class="row">
-                <div *ngFor="let stat of statData" class="col-md-4">
-                    <app-stat [title]="stat.title" [value]="stat.value" [icon]="stat.icon"></app-stat>
+                <div class="col-md-6">
+                    <iframe width="100%" height="200" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/widget/r9DTwR-Ht116HiyZGYE7a6RXOLhacFNxVKVMDE212ts?embed=true"></iframe>
                 </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="200" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/widget/pyyHVjMWdHA4T8aceMQY5zmLO5wTbD_SPanG4X6XN2M?embed=true"></iframe>
+                                </div>
             </div>
             <!-- end row -->
 
@@ -105,21 +108,11 @@
                     <div class="d-sm-flex flex-wrap">
                         <h4 class="card-title mb-4">Email Sent</h4>
                         <div class="ms-auto">
-                            <ul class="nav nav-pills">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript: void(0);" [ngClass]="{'active': isActive === 'week'}" (click)="weeklyreport()">Week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript: void(0);" (click)="monthlyreport()" [ngClass]="{'active': isActive === 'month'}">Month</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="javascript: void(0);" (click)="yearlyreport()" [ngClass]="{'active': isActive === 'year'}">Year</a>
-                                </li>
-                            </ul>
+                           
                         </div>
                     </div>
-                    <apx-chart dir="ltr" class="apex-charts" [chart]="emailSentBarChart.chart" [series]="emailSentBarChart.series" [legend]="emailSentBarChart.legend" [colors]="emailSentBarChart.colors" [fill]="emailSentBarChart.fill" [dataLabels]="emailSentBarChart.dataLabels" [xaxis]="emailSentBarChart.xaxis" [plotOptions]="emailSentBarChart.plotOptions">
-                    </apx-chart>
+
+                    <iframe width="100%" height="708" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/widget/nc_PqFcBnG0ky7IQz7mqmcj47PYc4wjr-6dSkyB2qFU?embed=true"></iframe>
                 </div>
             </div>
         </div>
