@@ -1,15 +1,15 @@
-import { Component, QueryList, ViewChildren, OnInit } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
+import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Observable } from 'rxjs';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import { UntypedFormBuilder, UntypedFormGroup, FormArray, Validators } from '@angular/forms';
 
 import Swal from 'sweetalert2';
 
+import { JobListdata } from './data';
+import { NgbdJobListSortableHeader } from './list-sortable.directive';
 import { jobListModel } from './list.model';
 import { JobListService } from './list.service';
-import { NgbdJobListSortableHeader, SortEvent } from './list-sortable.directive';
-import { JobListdata } from './data';
 
 @Component({
   selector: 'app-list',
@@ -44,7 +44,7 @@ export class ListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.breadCrumbItems = [{ label: 'Jobs' }, { label: 'Jobs List', active: true }];
+    this.breadCrumbItems = [{ label: 'Alertes' }, { label: 'Alertes', active: true }];
 
     /**
      * Form Validation

@@ -1,14 +1,14 @@
-import { Component, QueryList, ViewChildren, OnInit, ViewChild } from '@angular/core';
 import { DecimalPipe } from '@angular/common';
+import { Component, OnInit, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { BsModalService, ModalDirective } from 'ngx-bootstrap/modal';
 import { Observable } from 'rxjs';
-import { BsModalService, BsModalRef, ModalDirective } from 'ngx-bootstrap/modal';
-import { UntypedFormBuilder, UntypedFormGroup, UntypedFormArray, UntypedFormControl, Validators } from '@angular/forms';
 
 
-import { userListModel } from './userlist.model';
 import { userList } from './data';
+import { NgbdUserListSortableHeader } from './userlist-sortable.directive';
+import { userListModel } from './userlist.model';
 import { userListService } from './userlist.service';
-import { NgbdUserListSortableHeader, SortEvent } from './userlist-sortable.directive';
 
 @Component({
   selector: 'app-userlist',
@@ -45,7 +45,7 @@ export class UserlistComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.breadCrumbItems = [{ label: 'Contacts' }, { label: 'Users List', active: true }];
+    this.breadCrumbItems = [{ label: 'Gestion' }, { label: 'Supervision', active: true }];
 
     setTimeout(() => {
       this.contactsList.subscribe(x => {

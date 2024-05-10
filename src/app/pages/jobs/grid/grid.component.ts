@@ -1,13 +1,13 @@
-import {Component, QueryList, ViewChildren, OnInit} from '@angular/core';
-import {DecimalPipe} from '@angular/common';
-import {Observable} from 'rxjs';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
+import { DecimalPipe } from '@angular/common';
+import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { UntypedFormBuilder } from '@angular/forms';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { Observable } from 'rxjs';
 
 
-import {jobGridModel} from './grid.model';
+import { NgbdJobGridSortableHeader } from './grid-sortable.directive';
+import { jobGridModel } from './grid.model';
 import { JobGridService } from './grid.service';
-import { NgbdJobGridSortableHeader, SortEvent } from './grid-sortable.directive';
 
 @Component({
   selector: 'app-grid',
@@ -40,7 +40,7 @@ export class GridComponent implements OnInit {
   }
 
   ngOnInit(): void {
-   this.breadCrumbItems = [{ label: 'Jobs' }, { label: 'Jobs Grid', active: true }];
+   this.breadCrumbItems = [{ label: 'Compte rendu' }, { label: 'Compte rendu', active: true }];
    /**
    * fetches data
    */

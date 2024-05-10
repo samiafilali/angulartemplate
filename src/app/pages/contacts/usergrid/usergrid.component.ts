@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, UntypedFormArray, Validators } from '@angular/forms';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 import { Usergrid } from './usergrid.model';
 
@@ -33,7 +33,7 @@ export class UsergridComponent implements OnInit {
   ngOnInit() {
     this.selectValue = ['Photoshop', 'illustrator', 'Html', 'Css', 'Php', 'Java', 'Python'];
 
-    this.breadCrumbItems = [{ label: 'Contacts' }, { label: 'Users Grid', active: true }];
+    this.breadCrumbItems = [{ label: 'Gestion' }, { label: 'Utilisateurs', active: true }];
     this.userForm = this.formBuilder.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required]],
